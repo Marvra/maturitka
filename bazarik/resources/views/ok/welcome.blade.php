@@ -67,7 +67,7 @@
                                </li>
                                <li class="list-group-item ">
                                 <div class="row"> 
-                                  <div class="col-5">Vytvorene:</div>
+                                  <div class="col-5">Vytvorené:</div>
                                   <div class="col-7 d-flex justify-content-end fw-bold">{{ $post->created_at->format('d/m/Y') }}</div>
                                  </div>
                                </li>
