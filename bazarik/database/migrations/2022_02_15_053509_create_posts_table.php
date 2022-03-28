@@ -23,6 +23,7 @@ class CreatePostsTable extends Migration
             $table->string('contact')->unique();
             $table->string('location');
             $table->timestamp('created_at');
+            $table->timestamp('updated_at');
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
 
