@@ -29,10 +29,16 @@
             </p>
 
             <p class="h3 mt-5" > Kontakt:</p>
+            @auth
+                <p>
+                    {{ $post->contact }}
+                </p>
+            @endauth
+            @guest
             <p>
-                {{ $post->contact }}
+                Potrebné prihlásenie
             </p>
-
+            @endguest
             <p class="h3" > Lokalita:</p>
             <p>
                 {{ $post->location }}
