@@ -23,7 +23,10 @@ class CreatePostsTable extends Migration
             $table->string('contact')->unique();
             $table->string('location');
             $table->timestamps('created_at');
-            $table->foreignId('category_id')->constrained('categories');
+            $table->unsignedBigInteger('category_id');
+            
+            $table->foreign('category_id')->references('id')->on('categories');
+
         });
     }
 
