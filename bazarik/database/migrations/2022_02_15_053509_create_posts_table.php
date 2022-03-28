@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->integer('price');
             $table->string('contact')->unique();
             $table->string('location');
-            $table->timestamps('created_at')->nullable()->default(DB::raw('CURRENT_TIMESTAMP'));;
+            $table->timestamps()->nullable();
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
 
