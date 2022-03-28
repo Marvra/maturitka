@@ -46,10 +46,10 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => 'DATABASE_URL',
-            'host' =>  '127.0.0.1',
+            'host' =>  'local',
             'port' => '3306',
-            'database' => 'forge',
-            'username' => 'root',
+            'database' => 'bazar',
+            'username' => 'bazar',
             'password' => 'root',
             'unix_socket' => '',
             'charset' => 'utf8mb4',
