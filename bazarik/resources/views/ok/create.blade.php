@@ -36,7 +36,7 @@
                   <div class="mb-3">
                     <label for="name" class="required">Názov</label>
                     <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Zadajte názov vášho inzerátu..." >
-                    @error('description')
+                    @error('name')
                       <div class="text-danger">{{ $message }}</div>
                     @enderror
                   </div>
